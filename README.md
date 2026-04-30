@@ -54,9 +54,18 @@ For Linux/MacOS systems:
 ```
 
 or you can set an alias:
+
+For Windows PowerShell:
+```commandline
+    function dx-tools { python 'C:\<path>\aps-dx-tools-python\main.py' @args }
 ```
-alias dx-tools="python3 main.py"
+To make the alias permanent, add the function to your PowerShell profile (`$PROFILE`).
+
+For Linux/MacOS systems:
+```commandline
+    alias dx-tools="python3 main.py"
 ```
+To make the alias permanent, add it to `~/.bashrc` or `~/.zshrc`.
 
 and call the app with further commands:
 
